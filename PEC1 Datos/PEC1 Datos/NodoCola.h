@@ -11,6 +11,6 @@ public:
 	nodo();
 	nodo(Cliente v);
 	~nodo();
-	vehiculo getCliente();//te da la informacion del Cliente
+	Cliente getCliente();//te da la informacion del Cliente
 
 };
