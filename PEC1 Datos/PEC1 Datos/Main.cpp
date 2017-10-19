@@ -9,6 +9,7 @@
 #include "Cliente.h"
 #include "time.h"
 #include <conio.h>
+#include "NodoCola.h"
 
 using namespace std;
 
