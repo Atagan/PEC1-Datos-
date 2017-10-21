@@ -1,25 +1,26 @@
 // PEC1Datos.cpp: define el punto de entrada de la aplicación de consola.
 //
-
-#include "stdafx.h"
-#include <windows.h>
 #include <iostream>
-#include <stdlib.h>
+#include "stdafx.h"
 #include "Gestor.h"
 #include "Cliente.h"
-#include "time.h"
-#include <conio.h>
-#include "NodoCola.h"
+//#include <Windows.h>
+#include <string>
+#include "cola.h"
+
 
 using namespace std;
 
+int main(int argc, char** argv)
+{
+	//ShowWindow(GetConsoleWindow(), SW_MAXIMIZE);
 
-ShowWindow(GetConsoleWindow(),SW_MAXIMIZE);
-    srand(time(NULL));
     char opcion;
-    Vehiculo a;
+
+    //Cliente cliente;
+
     do{
-        system("cls");
+     
         cout << "\t--------------\n";
         cout << "\tMenu\n";
         cout << "\t--------------\n";
@@ -38,20 +39,14 @@ ShowWindow(GetConsoleWindow(),SW_MAXIMIZE);
 	    
         cout << "\tIndique la opcion deseada: ";
         cin >>opcion;
-        system("cls");
+      //  system("cls");
         switch(opcion){
             case 'A':
-		
                 break;
-            case 'B':
-			
-                
+			case 'B':
                 break;
-            case 'C':
-                
-                
-                break;
-		
+            case 'C':                          
+				break;
             case 'D':
                 break;
             case 'E':
@@ -66,16 +61,14 @@ ShowWindow(GetConsoleWindow(),SW_MAXIMIZE);
             case 'H':
                 
                 break;
-            case 'I':
-		
+            case 'I':		
                 break;
-	    case 'J':
-		cout<<"Reiniciando programa...";
-		sleep(3);
-		system("cls")
-		break;
-	    case 'I':
-		cout<<"\t Saliendo del programa...\n";
+			case 'J':
+
+				cout<<"Reiniciando programa...\n";
+				break;
+			case 'K':
+				cout<<"\t Saliendo del programa...\n";
                 break;
             default:
                 cout<<"Opcion incorrecta\n\n";
@@ -83,4 +76,3 @@ ShowWindow(GetConsoleWindow(),SW_MAXIMIZE);
     } while(opcion!='K'); 
 	return 0;
 }
-
