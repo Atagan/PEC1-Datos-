@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include "Gestor.h"
 #include "Cliente.h"
-//#include <Windows.h>
+#include <Windows.h>
 #include <string>
 #include "cola.h"
 
@@ -13,7 +13,7 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	//ShowWindow(GetConsoleWindow(), SW_MAXIMIZE);
+	ShowWindow(GetConsoleWindow(), SW_MAXIMIZE);
 
     char opcion;
 
@@ -21,7 +21,7 @@ int main(int argc, char** argv)
 
     do{
      
-        cout << "\t--------------\n";
+        std::cout << "\t--------------\n";
         cout << "\tMenu\n";
         cout << "\t--------------\n";
         
@@ -34,8 +34,8 @@ int main(int argc, char** argv)
         cout << "\tG.- Simular el proceso de compra de entradas de los clientes VIP.\n";
         cout << "\tH.- Simular el proceso de compra de entradas de los clientes no registrados.\n";
         cout << "\tI.- Mostrar la lista de entradas vendidas.\n";
-	cout << "\tJ.- Reiniciar el programa.\n";
-	cout << "\tK.- Salir del programa.\n";
+		cout << "\tJ.- Reiniciar el programa.\n";
+		cout << "\tK.- Salir del programa.\n";
 	    
         cout << "\tIndique la opcion deseada: ";
         cin >>opcion;
@@ -64,7 +64,6 @@ int main(int argc, char** argv)
             case 'I':		
                 break;
 			case 'J':
-
 				cout<<"Reiniciando programa...\n";
 				break;
 			case 'K':
